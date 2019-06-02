@@ -291,7 +291,7 @@
     }
 </script>
 <jsp:include page="/WEB-INF/footer.jsp"/>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGBFTE3euKqPB93MhHC67bgevXWj_n1YQ&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<fmt:bundle basename="directions"><fmt:message key="api.key"/></fmt:bundle>&callback=initMap"></script>
 
 </body>
 </html>
