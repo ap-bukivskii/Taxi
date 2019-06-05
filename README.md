@@ -13,3 +13,4 @@ Java external cources task
 3. Соберите проект командой “mvn clean install” запущеной в папке “src” и переместите полученый файл “Taxi.war” в папку “webapps” Томкэта.
 4. В браузере перейдите по пути на который настроен Tomcat сервер + Taxi (например: http://localhost:8080/Taxi/)
 5. Приложение использует **Google directions API**, для его работы необходимо настроить **api.key** в файле src/main/resources/directions.properties, **либо же** Вы можете связаться со мной для внесения Вашего IP в вайтлист. 
+(+380 97 2551563, ap.bukivskii@gmail.com)
