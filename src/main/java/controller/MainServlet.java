@@ -19,7 +19,7 @@ public class MainServlet extends HttpServlet {
 
 
     @Override
-    public void init() throws ServletException { //TODO command factory
+    public void init() throws ServletException {
         LOGGER.info("Initializing main servlet");
     }
 
@@ -31,7 +31,8 @@ public class MainServlet extends HttpServlet {
         String page = command.execute(req, resp);
         LOGGER.debug("responce page="+page);
         if (page.contains("redirect:")) {
-            resp.sendRedirect(req.getContextPath() + page.replace("redirect:", ""));
+            page = page.replace("redirect:", "");
+            resp.sendRedirect(page.contains(req.getContextPath()) ? page : (req.getContextPath() + page));
         } else {
             req.getRequestDispatcher(page).forward(req, resp);
         }

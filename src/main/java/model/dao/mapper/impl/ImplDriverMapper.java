@@ -19,7 +19,7 @@ public class ImplDriverMapper implements Mapper<Driver> {
     @Override
     public Driver parseFromResultSet(ResultSet resultSet) throws SQLException {
 
-        LOGGER.info("Parsing driver from resultset");
+        LOGGER.info("Parsing driver from result set");
         Driver driver = new Driver();
 
         driver.setId(resultSet.getInt("iddriver"));
@@ -43,12 +43,12 @@ public class ImplDriverMapper implements Mapper<Driver> {
 
         Driver driver = new Driver();
 
-        driver.setFirstNameEn(request.getParameter("f-name-en"));
-        driver.setFirstNameUa(request.getParameter("f-name-ua"));
-        driver.setLastNameEn(request.getParameter("l-name-en"));
-        driver.setLastNameUa(request.getParameter("l-name-ua"));
-        driver.setEmail(request.getParameter("email"));
-        driver.setCarType(CarType.valueOf(request.getParameter("car_type")));
+        driver.setFirstNameEn(request.getParameter("d-f-name-en"));
+        driver.setFirstNameUa(request.getParameter("d-f-name-ua"));
+        driver.setLastNameEn(request.getParameter("d-l-name-en"));
+        driver.setLastNameUa(request.getParameter("d-l-name-ua"));
+        driver.setEmail(request.getParameter("d-email"));
+        driver.setCarType(CarType.valueOf(request.getParameter("car-type")));
 
         return driver;
     }

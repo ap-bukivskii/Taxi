@@ -1,5 +1,6 @@
 package controller.command;
 
+import controller.command.impl.admin.*;
 import controller.command.impl.common.*;
 import controller.command.impl.user.*;
 import org.apache.log4j.LogManager;
@@ -31,6 +32,12 @@ public class CommandFactory {
         commands.put("rideHistory", new RideHistoryCommand());
 
         //admin commands
+        commands.put("admin_register_user", new AdminRegisterUser());
+        commands.put("admin_register_driver", new AdminRegisterDriver());
+        commands.put("viewAllUsers", new ViewUsersCommand());
+        commands.put("viewAllDrivers", new ViewDriversCommand());
+        commands.put("viewDriverDetails", new ViewDriverDetails());
+        commands.put("viewUserDetails", new ViewUserDetails());
 
     }
 

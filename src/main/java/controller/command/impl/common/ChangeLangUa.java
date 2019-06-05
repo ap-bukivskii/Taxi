@@ -20,13 +20,14 @@ public class ChangeLangUa  implements Command {
         String referer;
         LOGGER.info("Change lang to ukrainian command");
         request.getSession().setAttribute("app_lang", "ua");
-        //referer = (String) Optional.ofNullable(request.getHeader("referer")).orElse("/action/home");
-        try {
-            referer = new URI(request.getHeader("referer")).getPath().replace(request.getContextPath(),"");
-        }catch (URISyntaxException e){
-            referer = "/action/home";
-            LOGGER.error("Bad referer url. returning to HOME"+e);
-        }
+        referer = (String) Optional.ofNullable(request.getHeader("referer")).orElse("/action/home");
+//        try {
+//            referer = new URI(request.getHeader("referer")).getPath().replace(request.getContextPath(),"");
+//
+//        }catch (URISyntaxException e){
+//            referer = "/action/home";
+//            LOGGER.error("Bad referer url. returning to HOME"+e);
+//        }
 
         LOGGER.debug(referer);
         return "redirect:" + referer;

@@ -11,7 +11,7 @@ public enum CarType {
     private String message;
     private double costScaler;
 
-    CarType(String name,String message, double costScaler) {
+    CarType(String name, String message, double costScaler) {
         this.name = name;
         this.message = message;
         this.costScaler = costScaler;
@@ -23,7 +23,6 @@ public enum CarType {
     public double getCostScaler() {
         return costScaler;
     }
-
     public String getMessage() {
         return message;
     }

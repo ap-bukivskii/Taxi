@@ -22,26 +22,10 @@ public class User {
     private int ridesCount;
 
     public User() {
-        this.setRole(Role.USER);
-        this.setMoneySpent(0);
-        this.setAdditionalDiscount(0);
-        this.setPersonalDiscount(0); //just to be sure
-    }
-
-    //for registration
-    public User(String login, String password, String email, String firstNameEn, String firstNameUa, String lastNameEn, String lastNameUa) {
-        this.login = login;
-        this.password = password;
-        this.email = email;
-        this.firstNameEn = firstNameEn;
-        this.firstNameUa = firstNameUa;
-        this.lastNameEn = lastNameEn;
-        this.lastNameUa = lastNameUa;
-
-        this.setRole(Role.USER);
-        this.setMoneySpent(0);
-        this.setAdditionalDiscount(0);
-        this.setPersonalDiscount(0);
+        this.moneySpent=0;
+        this.personalDiscount=0;
+        this.additionalDiscount=0;
+        this.ridesCount=0;
     }
 
     public User(int id, String login, String password, String email, String firstNameEn, String firstNameUa, String lastNameEn, String lastNameUa, List<Ride> ridesHistory, Role role, int personalDiscount, int additionalDiscount, int moneySpent) {

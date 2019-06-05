@@ -35,17 +35,6 @@ public class Driver {
         this.ridesHistory = ridesHistory;
     }
 
-    public Driver(String email, String firstNameEn, String firstNameUa, String lastNameEn, String lastNameUa, CarType carType) {
-        this.email = email;
-        this.firstNameEn = firstNameEn;
-        this.firstNameUa = firstNameUa;
-        this.lastNameEn = lastNameEn;
-        this.lastNameUa = lastNameUa;
-        this.carType = carType;
-        this.rating = 0;
-        this.ridesCount = 0;
-    }
-
     public String getEmail() {
         return email;
     }

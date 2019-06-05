@@ -43,6 +43,12 @@ public class AccessFilter implements Filter {
         userCommands.add("rideHistory");
 
         adminCommands.addAll(userCommands);
+        adminCommands.add("admin_register_user");
+        adminCommands.add("admin_register_driver");
+        adminCommands.add("viewAllUsers");
+        adminCommands.add("viewAllDrivers");
+        adminCommands.add("viewDriverDetails");
+        adminCommands.add("viewUserDetails");
 
         permissions.put(Role.UNAUTHORIZED,commonCommands);
         permissions.put(Role.USER,userCommands);
