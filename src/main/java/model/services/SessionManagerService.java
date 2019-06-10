@@ -1,6 +1,6 @@
 package model.services;
 
-import exception.NotFoundException;
+import model.exception.NotFoundException;
 import model.entities.Driver;
 import model.entities.User;
 import model.entities.prop.CarType;

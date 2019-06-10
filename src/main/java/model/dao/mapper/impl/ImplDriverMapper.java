@@ -1,6 +1,6 @@
 package model.dao.mapper.impl;
 
-import exception.WrongInputDataException;
+import model.exception.WrongInputDataException;
 import model.dao.mapper.Mapper;
 import model.entities.Driver;
 import model.entities.prop.CarType;

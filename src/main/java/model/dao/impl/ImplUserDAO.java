@@ -1,7 +1,6 @@
 package model.dao.impl;
 
-import exception.NotFoundException;
-import exception.WrongInputDataException;
+import model.exception.NotFoundException;
 import model.dao.UserDAO;
 import model.dao.mapper.Mapper;
 import model.dao.mapper.impl.ImplUserMapper;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import model.entities.prop.CarType;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 /**

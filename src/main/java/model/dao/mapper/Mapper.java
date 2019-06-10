@@ -1,6 +1,6 @@
 package model.dao.mapper;
 
-import exception.WrongInputDataException;
+import model.exception.WrongInputDataException;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.ResultSet;

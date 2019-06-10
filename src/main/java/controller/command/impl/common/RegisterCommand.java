@@ -1,13 +1,11 @@
 package controller.command.impl.common;
 
 import controller.command.Command;
-import exception.WrongInputDataException;
 import model.dao.DAOFactory;
 import model.dao.UserDAO;
 import model.dao.mapper.Mapper;
 import model.dao.mapper.impl.ImplUserMapper;
 import model.entities.User;
-import model.util.Validator;
 import model.util.impl.UserValidator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

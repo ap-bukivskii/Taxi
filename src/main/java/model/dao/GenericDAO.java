@@ -1,7 +1,6 @@
 package model.dao;
 
-import exception.NotFoundException;
-import exception.WrongInputDataException;
+import model.exception.NotFoundException;
 
 import java.util.List;
 

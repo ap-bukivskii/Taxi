@@ -50,7 +50,7 @@
     </welcome-file-list>
 
     <error-page>
-        <exception-type>exception.PermissionDeniedException</exception-type>
+        <exception-type>model.exception.PermissionDeniedException</exception-type>
         <location>/WEB-INF/permission_error.jsp</location>
     </error-page>
 

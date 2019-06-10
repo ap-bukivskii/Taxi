@@ -1,6 +1,6 @@
 package model.services.impl;
 
-import exception.NotFoundException;
+import model.exception.NotFoundException;
 import model.dao.DAOFactory;
 import model.entities.Driver;
 import model.entities.SessionManager;

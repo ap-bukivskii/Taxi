@@ -1,12 +1,9 @@
 package model.dao.mapper.impl;
 
-import exception.WrongInputDataException;
+import model.exception.WrongInputDataException;
 import model.dao.mapper.Mapper;
 import model.entities.User;
 import model.entities.prop.Role;
-import model.services.impl.ImplUserService;
-import model.util.Validator;
-import model.util.impl.UserValidator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.mindrot.jbcrypt.BCrypt;

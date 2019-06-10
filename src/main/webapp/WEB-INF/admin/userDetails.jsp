@@ -40,8 +40,8 @@
                         ${sessionScope.user_info.login}
 
                 </div>
-                <div class="col-md-4 border border-dark">
-                    <b><fmt:message key="l.user.email"/></b>
+                <div class="col-md-3 border border-dark">
+                    <b><fmt:message key="l.user.email"/></b><br>
                         ${sessionScope.user_info.email}
 
                 </div>
@@ -86,8 +86,8 @@
                         ${sessionScope.user_info.login}
 
                 </div>
-                <div class="col-md-4 border border-dark">
-                    <b><fmt:message key="l.user.email"/></b>
+                <div class="col-md-3 border border-dark">
+                    <b><fmt:message key="l.user.email"/></b><br>
                         ${sessionScope.user_info.email}
 
                 </div>

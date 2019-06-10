@@ -1,6 +1,6 @@
 package controller.filters;
 
-import exception.PermissionDeniedException;
+import model.exception.PermissionDeniedException;
 import model.entities.User;
 import model.entities.prop.Role;
 import org.apache.log4j.LogManager;

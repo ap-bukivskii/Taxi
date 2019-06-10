@@ -1,7 +1,7 @@
 package controller.command.impl.user;
 
 import controller.command.Command;
-import exception.NotFoundException;
+import model.exception.NotFoundException;
 import model.dao.mapper.Mapper;
 import model.dao.mapper.impl.ImplRideMapper;
 import model.entities.Ride;

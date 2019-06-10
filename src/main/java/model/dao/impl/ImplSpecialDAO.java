@@ -1,7 +1,7 @@
 package model.dao.impl;
 
-import exception.NotFoundException;
-import exception.WrongInputDataException;
+import model.exception.NotFoundException;
+import model.exception.WrongInputDataException;
 import model.dao.SpecialDAO;
 import model.dao.mapper.Mapper;
 import model.dao.mapper.impl.ImplSpecialMapper;

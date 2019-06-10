@@ -1,10 +1,9 @@
 package model.dao.mapper.impl;
 
-import exception.WrongInputDataException;
+import model.exception.WrongInputDataException;
 import model.dao.mapper.Mapper;
 import model.entities.Driver;
 import model.entities.Ride;
-import model.entities.Special;
 import model.entities.User;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

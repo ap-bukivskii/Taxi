@@ -1,13 +1,12 @@
 package model.dao.impl;
 
-import exception.NotFoundException;
-import exception.WrongInputDataException;
+import model.exception.NotFoundException;
+import model.exception.WrongInputDataException;
 import model.dao.*;
 import model.dao.mapper.Mapper;
 import model.dao.mapper.impl.ImplRideMapper;
 import model.entities.Driver;
 import model.entities.Ride;
-import model.entities.Special;
 import model.entities.User;
 import model.util.RideUtils;
 import org.apache.log4j.LogManager;

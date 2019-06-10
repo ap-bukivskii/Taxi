@@ -1,7 +1,7 @@
 package controller.command.impl.common;
 
 import controller.command.Command;
-import exception.NotFoundException;
+import model.exception.NotFoundException;
 import model.dao.DAOFactory;
 import model.dao.UserDAO;
 import model.entities.User;
